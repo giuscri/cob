@@ -4,3 +4,5 @@ install:
 	@echo '*** To complete installation run'
 	@echo '*** echo 'source ~/.local/src/cob/cob.sh' >> ~/.bashrc'
 
+test:
+	./test.sh	
