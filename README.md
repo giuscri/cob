@@ -1,0 +1,5 @@
+# cob
+
+```
+make install
+```
