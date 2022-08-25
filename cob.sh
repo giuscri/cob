@@ -1,6 +1,6 @@
 # Returns HEAD commit message formatted as a valid branch name
 msg2bname() {
-  _msg2bname $(git show -s --format=%s)
+  _msg2bname "$(git show -s --format=%s)"
 }
 
 _msg2bname() {
@@ -9,7 +9,7 @@ _msg2bname() {
 
 # Returns branch name formatted as a commit message
 bname2msg() {
-  _bname2msg $(git branch --show-current)
+  _bname2msg "$(git branch --show-current)"
 }
 
 _bname2msg() {
