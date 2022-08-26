@@ -5,7 +5,7 @@ cob() {
 
 cm() {
   bname="$(git branch --show-current)"
-  git commit -m "$(_bname_to_msg "$bname")" --edit
+  git commit --edit -m "$(_bname_to_msg "$bname")"
 }
 
 # Returns HEAD commit message formatted as a valid branch name
